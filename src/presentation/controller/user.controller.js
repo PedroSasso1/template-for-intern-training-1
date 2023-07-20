@@ -17,7 +17,7 @@ routes.post('/', async (req, res) => {
       return res.status(422).json(responseBody)
     }
     
-    return res.status(200).json(responseBody)
+    return res.status(201).json(responseBody)
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
